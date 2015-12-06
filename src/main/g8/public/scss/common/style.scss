@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+// reset all default styles using compass;
+@import "compass/reset/utilities";
+@include global-reset;
