@@ -1,0 +1,21 @@
+@(title:String = "")(content:Html)
+@style(asset: String) = {
+    <link rel="stylesheet" href="@routes.Assets.at(asset)">
+}
+@script(script:String) = {
+    <script src="@routes.Assets.at(script)" type="text/javascript"></script>
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    @style("stylesheets/compiled/common/style.css")
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>@title</title>
+</head>
+<body>
+@content
+</body>
+</html>
